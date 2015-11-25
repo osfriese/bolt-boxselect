@@ -1,0 +1,14 @@
+
+.boxselectfield label{
+    float: left;
+    margin: 0;
+}
+
+.boxselectfield input{
+    float: left;
+}
+
+.boxselectfield div{
+    float: left;
+    margin: 0;
+}

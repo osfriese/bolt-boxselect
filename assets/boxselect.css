@@ -1,0 +1,25 @@
+
+.boxselectfield label{
+    float: left;
+    margin: 0;
+}
+
+.boxselectfield input{
+    float: left;
+    margin: 0 0 1rem 2rem; !important
+}
+
+.boxselectfield input[type=radio]{
+    margin: 0 1rem 1rem 2rem; !important
+}
+
+.boxselectfield div{
+    float: left;
+    margin: 0;
+}
+
+.boxselectfield .bslabel{
+//    padding-top: 1px;
+    margin: 0 2rem 1rem 0; !important
+    vertical-align: center;
+}

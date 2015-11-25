@@ -1,0 +1,30 @@
+{
+    "name": "bolt/boxselect",
+    "description": "Adds the posibility to use check/radiobuttons for select fields.",
+    "type": "bolt-extension",
+    "keywords" : [ "foo", "bar" ],
+    "require": {
+        "bolt/bolt": ">=2.0.0,<3.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Neumann", 
+            "email": "osfriese@scible.de"
+        }
+    ],
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+    "autoload": {
+        "files": [
+            "init.php"
+        ],
+        "psr-4": {
+            "Bolt\\Extension\\Osfriese\\Boxselect\\": ""
+        }
+    },
+    
+    "extra": {
+        "bolt-assets": "assets"
+    }
+}

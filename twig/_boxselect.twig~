@@ -1,0 +1,27 @@
+{#=== Options ============================================================================#}
+
+{% set attr_opt = {
+    class:        field.class|default(''),
+    name_id:      key,
+    required:     field.required|default(false),
+    readonly:     field.readonly|default(false)
+}%}
+
+{#=== FIELDSET ============================================================================#}
+
+<fieldset class="boxselectfield">
+    <label class="col-sm-3 control-label">{{field.label|default(key)}}</label>
+    <div class="col-sm-9" data-boxselectfield {{ macro.attr(attr_opt) }}>
+    {% for key, value in field.values %}
+        {% set isSelected =  (key == context.content.get(key|capitalize)) %}
+
+        <input  id="{{ name }}_{{ loop.index }}" 
+                type="{% if field.multiple %}checkbox{% else %}radio{% endif %}" 
+                name="{{ name }}" 
+                value="{{value}}"
+                {% if isSelected %} checked = "checked"{% endif %} />
+                
+        <label for="{{ name }}_{{ loop.index }}" class="bslabel">{{value}}</label>
+    {% endfor %}
+    </div>
+</fieldset>
