@@ -19,7 +19,9 @@ class BoxSelectField implements FieldInterface
 
     public function getStorageType()
     {
+        //dump(\Doctrine\DBAL\Types\Type::getTypesMap());
         return 'text';
+        //return Type::getType('json_array');
     }
 
     public function getStorageOptions()

@@ -23,3 +23,7 @@
     margin: 0 2rem 1rem 0; !important
     vertical-align: center;
 }
+
+.nowrap {
+    white-space: nowrap;
+}
